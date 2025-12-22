@@ -123,38 +123,62 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ===== GALLERY LIGHTBOX =====
-    // ===== Gallery Fullscreen Fix =====
     // Gallery Fullscreen + Navigation
-    const galleryItems = document.querySelectorAll(".gallery-item img");
-    const galleryModalImg = document.getElementById("galleryModalImg");
-    const galleryModalEl = document.getElementById("galleryModal");
-    const modal = new bootstrap.Modal(galleryModalEl);
+    const items = document.querySelectorAll(".gallery-item");
+    const modalImg = document.getElementById("galleryModalImg");
+    const modalEl = document.getElementById("galleryModal");
+    const prevBtn = document.querySelector(".modal-nav.prev");
+    const nextBtn = document.querySelector(".modal-nav.next");
+
+    if (!modalEl || !modalImg) return;
+
+    const modal = new bootstrap.Modal(modalEl, {
+        backdrop: true,
+        keyboard: true,
+        focus: true
+    });
 
     let currentIndex = 0;
 
-    // Open modal on image click
-    galleryItems.forEach((img, index) => {
-        img.addEventListener("click", () => {
+    function showImage(index) {
+        modalImg.src = items[index].dataset.img;
+    }
+
+    // OPEN MODAL
+    items.forEach((item, index) => {
+        item.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();   // 🔑 IMPORTANT FIX
             currentIndex = index;
-            galleryModalImg.src = img.src;
+            showImage(currentIndex);
             modal.show();
         });
     });
 
-    // Modal navigation buttons
-    const prevBtn = galleryModalEl.querySelector(".modal-nav.prev");
-    const nextBtn = galleryModalEl.querySelector(".modal-nav.next");
-
-    prevBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-        galleryModalImg.src = galleryItems[currentIndex].src;
+    // NEXT
+    nextBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        currentIndex = (currentIndex + 1) % items.length;
+        showImage(currentIndex);
     });
 
-    nextBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % galleryItems.length;
-        galleryModalImg.src = galleryItems[currentIndex].src;
+    // PREV
+    prevBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showImage(currentIndex);
     });
+
+    // KEYBOARD NAV
+    document.addEventListener("keydown", (e) => {
+        if (!modalEl.classList.contains("show")) return;
+
+        if (e.key === "ArrowRight") nextBtn.click();
+        if (e.key === "ArrowLeft") prevBtn.click();
+        if (e.key === "Escape") modal.hide();
+    });
+
+
 
 
     // ===== CONTACT FORM HANDLING =====
@@ -361,12 +385,4 @@ function throttle(func, limit) {
         }
     };
 }
-
-// Optimized scroll handler
-const optimizedScrollHandler = throttle(function () {
-    // Scroll-dependent functions here
-    setActiveNavLink();
-}, 100);
-
-window.addEventListener('scroll', optimizedScrollHandler);
 
