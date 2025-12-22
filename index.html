@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Colors Restaurant & Bar - Premium dining experience in Saligao, Goa">
+    <title>Colors Restaurant & Bar | Premium Dining in Goa</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Matching Lounge Template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader - Minimal Elegant Design -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-logo">COLORS</span>
+                <span class="brand-subtitle">restaurant & bar</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#story">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Full Page Slider -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920');">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">Welcome to COLORS</h1>
+                            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                Where Art Meets Flavor</p>
+                            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                <a href="#menu" class="btn btn-primary btn-lg me-3">View Menu</a>
+                                <a href="#contact" class="btn btn-outline-light btn-lg">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920');">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">Premium Dining</h1>
+                            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                Experience Culinary Excellence</p>
+                            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                <a href="#menu" class="btn btn-primary btn-lg me-3">View Menu</a>
+                                <a href="#contact" class="btn btn-outline-light btn-lg">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1920');">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">Vibrant Nightlife</h1>
+                            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                Goa's Most Colorful Experience</p>
+                            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                <a href="#menu" class="btn btn-primary btn-lg me-3">View Menu</a>
+                                <a href="#contact" class="btn btn-outline-light btn-lg">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1920');">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">Artistic Ambience</h1>
+                            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">A
+                                Feast for All Senses</p>
+                            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                <a href="#menu" class="btn btn-primary btn-lg me-3">View Menu</a>
+                                <a href="#contact" class="btn btn-outline-light btn-lg">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="story" class="story-section">
+        <div class="container">
+            <div class="row align-items-center story-wrapper">
+
+                <!-- TEXT COLUMN -->
+                <div class="col-lg-6 story-text">
+                    <span class="story-eyebrow">Our Story</span>
+                    <h2>Where Flavours Meet Atmosphere</h2>
+
+                    <p>
+                        Nestled in the heart of Saligao, Colors Restaurant & Bar was created as a space
+                        where taste, music, and ambience blend seamlessly.
+                    </p>
+
+                    <p>
+                        Inspired by Goa’s vibrant culture and evenings full of life, our kitchen crafts
+                        bold flavours while our bar curates moments worth remembering.
+                    </p>
+
+                    <p>
+                        Every detail — from the plate to the playlist — is designed to elevate your
+                        experience.
+                    </p>
+                </div>
+
+                <!-- IMAGE COLUMN -->
+                <div class="col-lg-6 story-image">
+                    <div class="story-image-box">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0"
+                            alt="Colors Restaurant Interior">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Menu Section - Simplified -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="row align-items-center menu-wrapper">
+
+                <!-- LEFT: BESTSELLERS -->
+                <div class="col-lg-6 menu-left">
+                    <span class="menu-eyebrow">Our Menu</span>
+                    <h2>Bestsellers</h2>
+
+                    <ul class="bestseller-menu">
+                        <li>
+                            <span class="dish-name">Goan Fish Curry</span>
+                            <span class="dish-desc">Traditional coastal flavours, slow cooked</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Spicy Prawn Skewers</span>
+                            <span class="dish-desc">Char-grilled prawns with signature spices</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Premium BBQ Platters</span>
+                            <span class="dish-desc">Perfect for sharing & late nights</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Signature Cocktails</span>
+                            <span class="dish-desc">Crafted blends, bold and refreshing</span>
+                        </li>
+                    </ul>
+
+                    <p class="menu-note">
+                        A small preview of what we serve — discover the complete experience in our full menu.
+                    </p>
+                </div>
+
+                <!-- RIGHT: QR + PDF -->
+                <div class="col-lg-6 menu-right">
+                    <div class="menu-card">
+                        <div class="qr-box">
+                            <img src="qr-placeholder.png" alt="Scan QR for Menu">
+                        </div>
+
+                        <h4>Scan to View Full Menu</h4>
+                        <p>
+                            Explore our complete food & beverage selection curated by our chefs and mixologists.
+                        </p>
+
+                        <a href="menu.pdf" target="_blank" class="menu-link">
+                            View Full Menu
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container-fluid px-0">
+            <h2 class="section-title text-center mb-5">Gallery</h2>
+
+            <div class="row g-0 gallery-grid">
+                <div class="col-6 col-md-3 gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Gallery Image">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="col-6 col-md-3 gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Gallery Image">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="col-6 col-md-3 gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" alt="Gallery Image">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="col-6 col-md-3 gallery-item">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" alt="Gallery Image">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Modal with Navigation -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content gallery-modal">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                <button class="modal-nav prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="modal-nav next"><i class="fas fa-chevron-right"></i></button>
+                <img id="galleryModalImg" src="" alt="Full View">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">We'd Love to Hear From You</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-info">
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Address</h5>
+                                <p>Betim–Verem–Saligao Road, Cross Road Junction South,<br>Badrez, Saligao, Goa 403511
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p><a href="tel:08975944032">089759 44032</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h5>Business Hours</h5>
+                                <p>Monday - Sunday: 6:00 PM - 1:00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container mt-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.5!2d73.8!3d15.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDMwJzAwLjAiTiA3M8KwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                            width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" id="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918975944032?text=Hello%20Colors%20Restaurant,%20I'd%20like%20to%20make%20an%20enquiry."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-delay="1000">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <div class="footer-logo">
+                        <h3>COLORS</h3>
+                        <p>restaurant & bar</p>
+                    </div>
+                    <p class="footer-tagline">Where Art Meets Flavor</p>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2024 Colors Restaurant & Bar. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
