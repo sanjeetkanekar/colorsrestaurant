@@ -4,27 +4,11 @@
    ============================================ */
 
 // Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function () {
-
-    // ===== PRELOADER =====
-    const preloader = document.getElementById('preloader');
-    const body = document.body;
-
-    // Disable scrolling while loading
-    body.classList.add('loading');
-
-    // Hide preloader when page is fully loaded
-    window.addEventListener('load', function () {
-        setTimeout(function () {
-            preloader.classList.add('hidden');
-            body.classList.remove('loading');
-
-            // Remove preloader from DOM after fade out
-            setTimeout(function () {
-                preloader.style.display = 'none';
-            }, 600);
-        }, 800); // Minimum display time for minimal loader
-    });
+window.addEventListener("load", () => {
+  const loader = document.getElementById("page-loader");
+  if (loader) {
+    loader.classList.add("fade-out");
+  }
 
     // ===== INITIALIZE AOS (Animate On Scroll) =====
     AOS.init({
